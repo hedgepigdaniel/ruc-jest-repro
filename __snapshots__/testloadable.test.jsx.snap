@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<TestLoadableComponent /> renders 1`] = `
+exports[`<TestLoadableComponent /> renders the loaded component 1`] = `
+Object {
+  "nodes": Array [
+    <TestComponent />,
+  ],
+  "state": Object {
+    "Component": [Function],
+    "error": null,
+  },
+}
+`;
+
+exports[`<TestLoadableComponent /> renders the loading component 1`] = `
 Object {
   "nodes": Array [
     <DefaultLoading />,

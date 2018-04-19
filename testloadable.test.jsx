@@ -12,10 +12,21 @@ import TestLoadableComponent from './testloadable.jsx';
 
 
 describe('<TestLoadableComponent />', () => {
-  it('renders', () => {
+  it('renders the loading component', () => {
     const r = shallow(
       <TestLoadableComponent />
     );
+    expect({
+      nodes: r.getElements(),
+      state: r.state(),
+    }).toMatchSnapshot();
+  });
+
+  it('renders the loaded component', () => {
+    const r = shallow(
+      <TestLoadableComponent />
+    );
+    r.update();
     expect({
       nodes: r.getElements(),
       state: r.state(),
