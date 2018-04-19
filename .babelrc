@@ -1,8 +1,7 @@
 {
   "presets": ["env", "react"],
   "plugins": [
-    "universal-import",
     "syntax-dynamic-import",
-    "dynamic-import-node",
+    "dynamic-import-promise"
   ]
 }
