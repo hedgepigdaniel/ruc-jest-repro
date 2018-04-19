@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TestLoadableComponent /> renders 1`] = `
+Object {
+  "nodes": Array [
+    <DefaultLoading />,
+  ],
+  "state": Object {
+    "error": null,
+  },
+}
+`;
